@@ -1,16 +1,16 @@
 void main() async {
-  print(getMeSomeFood());         
-  print(await getMeSomethingBetter());       
-  maybeSomethingSweet().then((String value) {
+  print(nameCharacter());         
+  print(await nameAnotherCharacter());       
+  nameTwoMore().then((String value) {
     print(value);                    
   });
 }
-Future<String> getMeSomeFood() async {
-  return "an apple";
+Future<String> nameCharacter() async {
+  return "Sponge Bob";
 }
-Future<String> getMeSomethingBetter() async {
-  return "a burger?";
+Future<String> nameAnotherCharacter() async {
+  return "Yoda";
 }
-Future<String> maybeSomethingSweet() async {
-  return "a chocolate cake!!";
+Future<String> nameTwoMore() async {
+  return "Rick and Morty!";
 }
