@@ -1,10 +1,10 @@
 void main() async {
   await waitForMe();
-  print('I was waiting here :)');
+  print('It took me 5 seconds to get here');
 }
 Future waitForMe() async {
-  print('Started.');
+  print("I'm going...");
   return Future.delayed(Duration(seconds: 5), () {
-    print("Now I'm done!");
+    print("I'm here!");
   });
 }
