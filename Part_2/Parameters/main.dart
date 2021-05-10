@@ -46,14 +46,18 @@ class SecondScreen extends StatelessWidget {
           title: Text('Second page'),
           backgroundColor: Colors.teal[200],
       ),
-      body: Center(
-          child: RaisedButton(
-            color: Colors.teal[200],
-          onPressed: (){
-            Navigator.pop(context);
-            },
-            child: Text(args.message),
-          )
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
+              color: Colors.teal[200],
+              onPressed: (){
+                Navigator.pop(context);
+              },
+              child: Text('Back'),
+            ),
+            Text(args.message),
+          ],
       ),
     );
   }
